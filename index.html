@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">   
+        <link rel="stylesheet" type="text/css" href="index.css"> 
+        <script src="quiz.js"></script>
+        <title>Quiz App</title>
+    </head>
+    <body>
+        <div class="grid">
+            <div id="quiz">
+                <div id="quiz-header">QUiz</div>
+                <hr style="margin-bottom: 20px">
+                <div id="question"></div>
+                <div class="buttons">
+                    <button id="btn0"><span id="choice0"></span></button>
+                    <button id="btn1"><span id="choice1"></span></button>
+                    <button id="btn2"><span id="choice2"></span></button>
+                    <button id="btn3"><span id="choice3"></span></button>
+                </div>
+                <hr style="margin-top: 50px">
+
+                <footer>
+                    <p id="progress">Question x of y</p>
+                </footer>
+                 <button id="startButton" onclick="quizQuestion()" >Start</button>
+            </div>
+        </div>
+    </body>
+</html>
