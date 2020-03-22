@@ -1,0 +1,394 @@
+/*mobile version*/
+body{
+    background-color: white;
+    
+}
+
+.disable{
+    pointer-events: none;
+}
+
+#start-layout{
+    background-color: white;
+    margin: 25% 5% auto;
+}
+
+#start-button{
+    background-color: lightgreen;
+    width: 250px;
+    height:70px;
+    font-size: 19px;
+     border-radius: 50px;
+     margin-bottom: 20px;
+     margin-left: 60px;
+     animation-name: start;
+     animation-duration: 1s;
+     animation-iteration-count: infinite;
+       animation-direction: alternate;
+}
+@keyframes start{
+    from{width: 250px;}
+    to{width: 280px;}
+}
+
+#start-button:hover{
+    cursor: pointer;
+    background-color: green;
+    width: 270px;
+    box-shadow: 5px 5px 5px;
+
+}
+#start-button:focus{
+     outline: none;
+}
+
+
+#question-type{
+   background-color: #FFF996;
+    width: 250px;
+    font-size: 19px;
+    height: 70px;
+    outline: none;
+    margin-left: 60px;
+    margin-bottom: 20px;
+    border-radius: 50px;
+    padding-left: 80px;
+    border: none;
+     animation-name: start;
+     animation-duration: 1s;
+     animation-iteration-count: infinite;
+    animation-direction: alternate;  
+}
+
+#question-type:hover{
+    cursor: pointer;
+    background-color: #EEE111; 
+    width: 270px;
+    box-shadow: 5px 5px 5px;
+}
+#question-type:focus{
+    outline: none;
+}
+
+.mySelect{
+    background-color: #4C3EAF;
+    width: 250px;
+    font-size: 19px;
+    height: 70px;
+    outline: none;
+    margin-left: 60px;
+    margin-bottom: 20px;
+    border-radius: 50px;
+    padding-left: 80px;
+    border: none;
+     animation-name: start;
+     animation-duration: 2s;
+     animation-iteration-count: infinite;
+       animation-direction: alternate;
+}
+.mySelect:hover{
+    cursor: pointer;
+    background-color: #2E15E7; 
+    width: 270px;
+    box-shadow: 5px 5px 5px;
+}
+
+
+
+.grid{
+    background-color: lightgrey;
+    width: 100%;
+    height: 100%;
+    padding:0;
+    border-radius: 50px;
+    border: 2px solid grey;
+    box-shadow: 10px 15px 5px grey;
+    display: none;
+    margin: 0;
+}
+
+#quiz-header{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-color: #57636e;
+    font-size: 60px;
+    text-align: center;
+    color: #fff;
+    padding: 2px 0px;
+    border-radius: 50px;
+}
+#question{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 20px;
+    width: 600px;
+    height: 60px;
+    color: white;
+}
+
+.buttons{
+    margin-top: 20px;
+}
+.btn0, .btn1, .btn2, .btn3{
+    background-color: #778897;
+    width:250px;
+    height: 70px;
+    font-size: 20px;
+    color: #fff;
+    border: 1px solid #1d3c6a;
+    border-radius: 50px;
+    margin: 20px 40px 10px 0px;
+    padding: 10px 10px;
+}
+#progress{
+    color:#2b2b2b;
+    font-size: 20px;
+}
+
+.btn0:hover, .btn1:hover, .btn2:hover, .btn3:hover{
+    cursor: pointer;
+    background-color: #57636e;
+}
+.btn0:focus, .btn1:focus, .btn2:focus, .btn3:focus{
+    outline: none;
+}
+.correct{
+    background-color: green;
+}
+.correct:focus{
+    background-color: green;
+    outline: none;
+}
+.wrong{
+    background-color: red;
+}
+.wrong:focus{
+    background-color: red;
+    outline: none;
+}
+#next{
+    background-color: lightgreen;
+    width: 150px;
+    font-size: 17px;
+    border-radius: 50px;
+    
+}
+#next:focus{
+    outline: none;
+}
+#exit{
+     background-color: red;
+    width: 150px;
+    font-size: 17px;
+    border-radius: 50px;
+    
+}
+#exit:focus{
+    outline: none;
+}
+#grid-footer{
+    display: flex;
+    flex-direction: row;
+    
+}
+button:hover{
+    cursor: pointer;
+}
+#noOfCorrect{
+    color: green;
+}
+
+
+
+@media only screen and (min-width: 768px) {
+
+body{
+    background-color: white;
+    margin: 40px 25% auto;
+}
+.disable{
+    pointer-events: none;
+}
+
+#start-layout{
+    background-color: white;
+    margin: 25% 10% auto;
+}
+
+#start-button{
+    background-color: lightgreen;
+    width: 250px;
+    height:70px;
+    font-size: 19px;
+     border-radius: 50px;
+     margin-bottom: 20px;
+     margin-left: 60px;
+     animation-name: start;
+     animation-duration: 1s;
+     animation-iteration-count: infinite;
+       animation-direction: alternate;
+}
+@keyframes start{
+    from{width: 250px;}
+    to{width: 280px;}
+}
+
+#start-button:hover{
+    cursor: pointer;
+    background-color: green;
+    width: 270px;
+    box-shadow: 5px 5px 5px;
+
+}
+#start-button:focus{
+     outline: none;
+}
+
+
+#question-type{
+   background-color: #FFF996;
+    width: 250px;
+    font-size: 19px;
+    height: 70px;
+    outline: none;
+    margin-left: 60px;
+    margin-bottom: 20px;
+    border-radius: 50px;
+    padding-left: 80px;
+    border: none;
+     animation-name: start;
+     animation-duration: 1s;
+     animation-iteration-count: infinite;
+    animation-direction: alternate;  
+}
+
+#question-type:hover{
+    cursor: pointer;
+    background-color: #EEE111; 
+    width: 270px;
+    box-shadow: 5px 5px 5px;
+}
+#question-type:focus{
+    outline: none;
+}
+
+.mySelect{
+    background-color: #4C3EAF;
+    width: 250px;
+    font-size: 19px;
+    height: 70px;
+    outline: none;
+    margin-left: 60px;
+    margin-bottom: 20px;
+    border-radius: 50px;
+    padding-left: 80px;
+    border: none;
+     animation-name: start;
+     animation-duration: 2s;
+     animation-iteration-count: infinite;
+       animation-direction: alternate;
+}
+.mySelect:hover{
+    cursor: pointer;
+    background-color: #2E15E7; 
+    width: 270px;
+    box-shadow: 5px 5px 5px;
+}
+
+
+
+.grid{
+    background-color: lightgrey;
+    width: 600px;
+    height: 500px;
+    padding: 10px 50px 50px 50px;
+    border-radius: 50px;
+    border: 2px solid grey;
+    box-shadow: 10px 15px 5px grey;
+    display: none;
+}
+
+#quiz-header{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-color: #57636e;
+    font-size: 60px;
+    text-align: center;
+    color: #fff;
+    padding: 2px 0px;
+    border-radius: 50px;
+}
+#question{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 20px;
+    color: white;
+}
+.buttons{
+    margin-top: 20px;
+}
+
+.btn0, .btn1, .btn2, .btn3{
+    background-color: #778897;
+    width:250px;
+    font-size: 20px;
+    color: #fff;
+    border: 1px solid #1d3c6a;
+    border-radius: 50px;
+    margin: 20px 40px 10px 0px;
+    padding: 10px 10px;
+}
+#progress{
+    color:#2b2b2b;
+    font-size: 20px;
+}
+
+.btn0:hover, .btn1:hover, .btn2:hover, .btn3:hover{
+    cursor: pointer;
+    background-color: #57636e;
+}
+.btn0:focus, .btn1:focus, .btn2:focus, .btn3:focus{
+    outline: none;
+}
+.correct{
+    background-color: green;
+}
+.correct:focus{
+    background-color: green;
+    outline: none;
+}
+.wrong{
+    background-color: red;
+}
+.wrong:focus{
+    background-color: red;
+    outline: none;
+}
+#next{
+    background-color: lightgreen;
+    width: 150px;
+    font-size: 17px;
+    border-radius: 50px;
+    
+}
+#next:focus{
+    outline: none;
+}
+#exit{
+     background-color: red;
+    width: 150px;
+    font-size: 17px;
+    border-radius: 50px;
+    
+}
+#exit:focus{
+    outline: none;
+}
+#grid-footer{
+    display: flex;
+    flex-direction: row;
+    
+}
+button:hover{
+    cursor: pointer;
+}
+#noOfCorrect{
+    color: green;
+}
+}

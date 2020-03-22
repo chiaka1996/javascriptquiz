@@ -1,31 +1,64 @@
 <!DOCTYPE html>
-<html lang="eng">
+<html>
     <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">   
-        <link rel="stylesheet" type="text/css" href="index.css"> 
-        <script src="quiz.js"></script>
+        <meta charset="utf-8">  
+        <link rel="stylesheet" type="text/css" href="style.css"> 
         <title>Quiz App</title>
     </head>
     <body>
+            <div id="start-layout">
+                <div><button id="start-button">start</button></div>
+                
+                <div>
+                    <select class="mySelect">
+                        <option id="selectLevel"> Select Level </option>
+                        <option value="easy">Easy</option>
+                        <option value="medium">Medium</option>
+                        <option value="hard">Hard</option>
+                    </select>
+         </div> 
+
+                <div>
+                        <select id="question-type">
+                            <option>Select Question</option>
+                            <option value="21">Sport</option>
+                           <option value="23">History</option>
+                           <option value="18">Computer Science</option>
+                           <option value="22">Geography</option>
+                           <option value="17">Science & Nature</option>
+                        </select>        
+
+            
+            </div>
+            </div>
+
+
+
+
         <div class="grid">
             <div id="quiz">
                 <div id="quiz-header">QUiz</div>
                 <hr style="margin-bottom: 20px">
-                <div id="question"></div>
+                <div id="question" ></div>
                 <div class="buttons">
-                    <button id="btn0"><span id="choice0"></span></button>
-                    <button id="btn1"><span id="choice1"></span></button>
-                    <button id="btn2"><span id="choice2"></span></button>
-                    <button id="btn3"><span id="choice3"></span></button>
-                </div>
-                <hr style="margin-top: 50px">
-
-                <footer>
-                    <p id="progress">Question x of y</p>
-                </footer>
-                 <button id="startButton" onclick="quizQuestion()" >Start</button>
+                    <div id="answerButtons">
+                    <button id="0" class="btn0"></button>
+                    <button id="1" class="btn1"></button>
+                    <button id="2" class="btn2"></button>
+                    <button id="3" class="btn3"></button>
+                    </div>
+                <hr style="margin-top: 20px">
+            <div  id="grid-footer">
+                <div id="progress-div" style="margin-right: 30px"><p id="progress">Question <span id="x"></span> of <span id="y"></span></p></div>
+                <div id="next-div" style="margin-right: 30px; margin-top:10px"><button id="next">Next</button></div>
+                <div id="exit-div" style="margin-right: 30px; margin-top:10px"> <button id="exit">Exit</button></div>
+            </div>
+            <div>
+                <p id="progress">correct answers <span id="noOfCorrect"></span> / <span id="answerLength"></span></p>
+            </div>   
             </div>
         </div>
+    </div>
+        <script type="text/javascript" src="quiz.js"></script>
     </body>
 </html>
