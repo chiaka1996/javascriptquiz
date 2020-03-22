@@ -11,21 +11,21 @@
                 
                 <div>
                     <select class="mySelect">
-                        <option id="selectLevel"> Select Level </option>
-                        <option value="easy">Easy</option>
-                        <option value="medium">Medium</option>
-                        <option value="hard">Hard</option>
+                        <option id="selectLevel" style="font-size: 19px;"> Select Level </option>
+                        <option value="easy" style="font-size: 19px;">Easy</option>
+                        <option value="medium" style="font-size: 19px;">Medium</option>
+                        <option value="hard" style="font-size: 19px;">Hard</option>
                     </select>
          </div> 
 
                 <div>
                         <select id="question-type">
-                            <option>Select Question</option>
-                            <option value="21">Sport</option>
-                           <option value="23">History</option>
-                           <option value="18">Computer Science</option>
-                           <option value="22">Geography</option>
-                           <option value="17">Science & Nature</option>
+                            <option style="font-size: 19px;">Select Question</option>
+                            <option value="21" style="font-size: 19px;">Sport</option>
+                           <option value="23" style="font-size: 19px;">History</option>
+                           <option value="18" style="font-size: 19px;">Computer Science</option>
+                           <option value="22" style="font-size: 19px;">Geography</option>
+                           <option value="17" style="font-size: 19px;">Science & Nature</option>
                         </select>        
 
             
@@ -41,17 +41,22 @@
                 <hr style="margin-bottom: 20px">
                 <div id="question" ></div>
                 <div class="buttons">
-                    <div id="answerButtons">
+                    <div id="answerButtons">  
+                    <div id="firstRow">                      
                     <button id="0" class="btn0"></button>
                     <button id="1" class="btn1"></button>
+                </div>
+                    <div id="secondRow">
                     <button id="2" class="btn2"></button>
                     <button id="3" class="btn3"></button>
+                </div>
+                        </div>
                     </div>
-                <hr style="margin-top: 20px">
+                <hr style="margin-top: 10px;">
             <div  id="grid-footer">
                 <div id="progress-div" style="margin-right: 30px"><p id="progress">Question <span id="x"></span> of <span id="y"></span></p></div>
-                <div id="next-div" style="margin-right: 30px; margin-top:10px"><button id="next">Next</button></div>
-                <div id="exit-div" style="margin-right: 30px; margin-top:10px"> <button id="exit">Exit</button></div>
+                <div id="next-div" style="margin-right: 30px; margin-top:25px"><button id="next">Next</button></div>
+                <div id="exit-div" style="margin-right: 30px; margin-top:25px"> <button id="exit">Exit</button></div>
             </div>
             <div>
                 <p id="progress">correct answers <span id="noOfCorrect"></span> / <span id="answerLength"></span></p>

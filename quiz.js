@@ -1,6 +1,6 @@
 window.addEventListener('load', () => {
-
-let answerButtons = document.querySelector('#answerButtons').children;
+let firstRow = document.querySelector('#firstRow').children;
+let secondRow = document.querySelector('#secondRow').children;
 let quizHeader = document.querySelector('#quiz-header');
 let question = document.querySelector('#question');
 let choice0 = document.querySelector('.btn0');
@@ -33,6 +33,7 @@ let questionValue = parseInt(questionType.value);
 let levelBoolean = false;
 let questionBoolean = false;
 let fetchBoolean = false;
+let answerButtons = [...firstRow, ...secondRow];
 
 
 
@@ -113,7 +114,8 @@ let fetchApi = () => {
             fetchBoolean = true;
 
              if(errorCode == 0){
-                    startButton.classList.remove('disable');    
+                    startButton.classList.remove('disable');  
+                    startButton.style.backgroundColor = "green";  
                     }
             else{
                 startButton.classList.add('disable');
